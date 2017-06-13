@@ -14,10 +14,26 @@ module.exports = function(grunt) {
         options: {
           engine: 'gm', // instead of im - use gm for gpraphicsmagick
           sizes: [{
+            // name: 'large2x',
             width: 1600,
             suffix: '_large_2x',
             quality: 30
-          }]
+          },
+          {
+            // name: 'large',
+            width: 800,
+            suffix:'_large_1x'
+          }, 
+          {
+            // name: 'medium',
+            width: 640,
+            suffix: '_medium'
+          }, 
+          {
+            // name: 'small',
+            width: 500,
+            suffix: '_small'
+          }]  
         },
         files: [{
           expand: true,
